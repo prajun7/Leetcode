@@ -1,5 +1,5 @@
 class WordDictionary {
-    // Using Trie
+    // Using Trie Data Structure
     
     private class TrieNode{
         TrieNode[] child=new TrieNode[26];
