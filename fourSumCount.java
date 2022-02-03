@@ -20,14 +20,11 @@ class Solution {
         for (int i = 0; i < nums3.length ; i++){
             for (int j = 0; j < nums4.length; j++){
                 int sum = 0 - (nums3[i]+nums4[j]);   //Making it negative and comparing it in hashMap
-              
                 if (hMap.containsKey(sum)){
                    count = count + hMap.getOrDefault(sum,0);
                 }
             }
         }
-        
         return count;
-        
     }
 }
