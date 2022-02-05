@@ -1,5 +1,6 @@
 class Solution {
     public int findMaxLength(int[] nums) {
+        
         // In the hashMap we are storing the count, that is the sum and then the index of that count
         // <count,index>
     	Map<Integer, Integer> map = new HashMap<>();
