@@ -6,7 +6,6 @@ class Solution {
     	int maxlen = 0, count = 0;
         
     	for(int i = 0;i < nums.length;i++) {
-            
             // If nums[i] is equal to 1, add 1 to the count
             if (nums[i] == 1){
                 count += 1;
@@ -25,7 +24,6 @@ class Solution {
     		} else 
     			map.put(count, i);
     	}
-        
     	return maxlen;
     }
 }
