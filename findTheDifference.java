@@ -2,7 +2,7 @@ class Solution {
     public char findTheDifference(String s, String t) {
         // Initialize variables to store sum of ASCII codes for 
         // each string
-        
+    
         int charSumS = 0;
         int charSumT = 0;
         // Iterate through both strings and char codes
@@ -15,6 +15,5 @@ class Solution {
         
         // Return the difference between 2 strings as char
         return (char)(charSumT-charSumS);
-    }
-        
+    }  
 }
