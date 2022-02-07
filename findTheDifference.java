@@ -9,7 +9,6 @@ class Solution {
         for (char ch: s.toCharArray()){
             charSumS += (int)ch;
         }
-        
         for (char ch: t.toCharArray()){
             charSumT += (int)ch;
         }
