@@ -1,5 +1,4 @@
 class Solution {
-    
     public int findPairs(int[] nums, int k) {
         int pairs = 0, n = nums.length;
         
