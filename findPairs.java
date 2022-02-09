@@ -4,6 +4,7 @@ class Solution {
         
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> repeatedElements = new HashSet<>();
+        //This gives us unique elements with no repetition in 'set' hashSet 
         
         for(int ele : nums){
             if(set.contains(ele)) repeatedElements.add(ele);
