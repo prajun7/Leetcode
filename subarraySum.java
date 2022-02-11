@@ -1,5 +1,6 @@
 class Solution {
     // Prefix sum problem
+    // Check the note in Ipad
     
     public int subarraySum(int[] nums, int k) {
         
