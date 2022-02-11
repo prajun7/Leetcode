@@ -1,4 +1,6 @@
 class Solution {
+    // Prefix sum problem
+    
     public int subarraySum(int[] nums, int k) {
         
         HashMap<Integer,Integer> hMap = new HashMap<>();
