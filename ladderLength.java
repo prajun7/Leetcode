@@ -1,4 +1,7 @@
 class Solution {
+    
+    //Watch youtube video for explanation
+    
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> set = new HashSet<>(wordList);
         if(!set.contains(endWord)) return 0;
