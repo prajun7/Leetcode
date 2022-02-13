@@ -2,8 +2,6 @@ public List<List<Integer>> subsets(int[] nums) {
   //Backtracking problem
   //See notes in Ipad
   
-  
-  
     List<List<Integer>> list = new ArrayList<>();
     Arrays.sort(nums);
     backtrack(list, new ArrayList<>(), nums, 0);
