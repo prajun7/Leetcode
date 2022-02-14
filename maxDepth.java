@@ -1,5 +1,5 @@
 /**
- * Definition for a binary tree node
+ * Definition for a binary tree node.
  * public class TreeNode {
  *     int val;
  *     TreeNode left;
@@ -21,7 +21,7 @@ class Solution {
         Queue<TreeNode> queue = new LinkedList<TreeNode>();
         
         if(root == null) return 0;
-        // If root is null, that is no any element, than return 0
+        // If root is null, that is no any element, then return 0
         
         queue.offer(root);
         //offer adds the element
