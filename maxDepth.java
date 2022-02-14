@@ -52,10 +52,8 @@ class Solution {
                 queue.poll();
             }
             
-            depth++;
-            
+            depth++;  // Increment the depth  
         }
-        
         return depth;     
     }
 }
