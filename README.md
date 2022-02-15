@@ -6,5 +6,5 @@ And I will push the code here.
 I am starting this year with a promise of being consistent throughout the year. Consistency is the key to success.
 🤫
 
-Staring from Feb 15 2022, I am using LeetHub to push my code from Leetcode.
+Starting from Feb 15 2022, I am using LeetHub to push my code from Leetcode.
 Created using [LeetHub](https://github.com/QasimWani/LeetHub).
