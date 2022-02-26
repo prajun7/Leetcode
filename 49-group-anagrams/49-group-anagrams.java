@@ -6,6 +6,9 @@ class Solution {
             String key = hash(w);          
             if(!map.containsKey(key)) map.put(key, new ArrayList<>());
             map.get(key).add(w);
+            //map.gey(key) will give the newly formed arrayList
+            //than we are using .add in that arraylist to add the word
+            
         }
         
         return new ArrayList<>(map.values());
