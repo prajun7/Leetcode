@@ -86,7 +86,7 @@ class Solution {
             
         }
         
-        return 1221; //magic - LOL
+        return 0; //magic - LOL
                 
     }
 
