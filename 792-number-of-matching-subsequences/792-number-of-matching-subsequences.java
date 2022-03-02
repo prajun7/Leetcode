@@ -3,20 +3,27 @@
 class Solution {
     public int numMatchingSubseq(String s, String[] words) {
         int count = 0;
+        
+        //alreadySequence HashSet, stores those words which already is a sequence
+        //So, we don't have to compute again
         HashSet<String> alreadySequence = new HashSet<>();
-         HashSet<String> noSequence = new HashSet<>();
+        
+        //noSequence HashSet, stores those words which id not a sequence
+        //So, we don't have to compute again
+        HashSet<String> noSequence = new HashSet<>();
         
         for (String word : words){
             
             if (noSequence.contains(word)){
-                continue;
+                continue;   //It will just skip that loop and move to next iteration
             }
             
             if (alreadySequence.contains(word)){
                 count++;
+                continue;
             }
             
-            else if (isSubsequence ( s , word )){
+            if (isSubsequence ( s , word )){
                 count++;
                 alreadySequence.add(word);
             }
@@ -28,6 +35,8 @@ class Solution {
     }
     
     
+    // Method to check if that word is a sequence or not
+    // Check : 392. Is Subsequence before this
     public boolean isSubsequence(String s, String word){
         
         if (word.length() == 0){
