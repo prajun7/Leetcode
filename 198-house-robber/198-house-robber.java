@@ -17,8 +17,6 @@ class Solution {
         dp[0] = nums[0];  // for the first house
         dp[1] = Math.max(nums[0], nums[1]);   //For the second house, the dp[1] is the 
                      //max between first or second house
-         
-   // [ #,#,#]
         
         for (int i = 2; i < nums.length ; i++){
             // write for third house
@@ -28,6 +26,8 @@ class Solution {
             // We will pick max of these two
             
             dp[i] = Math.max(nums[i] + dp[i-2], dp[i-1]);
+            //current house = Max(current house + pre pre house, pre house)
+            // Use dp[i-2] not nums[1-2]
         }
         
         return dp[nums.length-1];
