@@ -2,23 +2,21 @@
 Similar to House Robber problem
 */
 class Solution {
-    public int deleteAndEarn(int[] nums) {
-        int n = 10001;
-        int[] values = new int[n];
-        
-        //Get sum of numbers
-        for (int num : nums)
-            values[num] += num;
+	// Tc: O(n)
+	// SC : O(n)
+	public int deleteAndEarn(int[] nums) {
+		int[] freq = new int[10002];
+		int[] dp = new int[10002];
 
-        int take = 0, skip = 0;
-        
-        for (int i = 0; i < n; i++) {
-            int takei = skip + values[i];
-            int skipi = Math.max(skip, take);
-            take = takei;
-            skip = skipi;
-        }
-        
-        return Math.max(take, skip);
-    }
+		for(int i = 0; i < nums.length; i++){
+			freq[nums[i]]++;
+		}
+
+		dp[0] = 0;
+		dp[1] = 1* freq[1];
+		for(int i = 2; i < 10002; i++){
+			dp[i] = Math.max(dp[i-1], dp[i-2] + i * freq[i]);
+		}
+		return dp[10001];
+	}
 }
