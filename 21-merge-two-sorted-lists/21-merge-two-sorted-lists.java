@@ -40,10 +40,7 @@ class Solution {
             ListNode temp = l1;  //again swap so that l1 is the smallest node.
             l1 = l2;
             l2 = temp;
-
-
         }
         return res;
-
     }
 }
