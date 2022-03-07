@@ -8,6 +8,11 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
+/*
+Striver: https://www.youtube.com/watch?v=Xb4slcp1U38
+*/
+
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
