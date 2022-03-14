@@ -1,9 +1,13 @@
+// https://www.youtube.com/watch?v=B6THIJXrTLs
+
 class Solution {
+    
     // TC : O(n)
     // SC : O(n)
+    
     public String simplifyPath(String path) {
         Stack<String> st = new Stack<>();
-        String[] pathList = path.split("\\/");
+        String[] pathList = path.split("/");  // split by backslash, using escape character
 
         for(String p : pathList){
             if(p.length() == 0 || p.equals(".")){
