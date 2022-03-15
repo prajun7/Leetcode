@@ -1,7 +1,11 @@
 class Solution {
+    
+    // https://www.youtube.com/watch?v=thL70BR3yMA
+    
     public String minRemoveToMakeValid(String s) {
         StringBuilder sb = new StringBuilder();
-        int open = 0;
+        int open = 0;   //Keep track of open paranthesis
+        
         for (char ch : s.toCharArray()){
             if (ch == '('){
                 open++;
@@ -13,6 +17,10 @@ class Solution {
             sb.append(ch);
             
             }
+        
+        if (open == 0){
+            return sb.toString();
+        }
         
         StringBuilder result = new StringBuilder();
         for (int i = sb.length()-1; i >= 0 ; i--){
