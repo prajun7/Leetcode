@@ -22,13 +22,15 @@ class Solution {
             return sb.toString();
         }
         
+        // If open is not 0, that means we have extra open brackets
+        // So, we will remove that open brackets by itereting from the back of sb
         StringBuilder result = new StringBuilder();
         for (int i = sb.length()-1; i >= 0 ; i--){
             if (sb.charAt(i) == '(' && open-- > 0) continue;
             result.append(sb.charAt(i));
         }
     
-        return result.reverse().toString();
+        return result.reverse().toString();   //Since the stings gets reversed, we need to reverse it
         
     }  
 }
