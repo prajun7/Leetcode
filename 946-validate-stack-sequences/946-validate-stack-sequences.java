@@ -5,7 +5,7 @@ class Solution {
         int j = 0;
         for (int i = 0; i < pushed.length ; i++){
             st.push(pushed[i]);
-            while (!st.isEmpty() && st.peek() == popped[j]){
+            while (!st.isEmpty() && j < popped.length && st.peek() == popped[j]){
                // System.out.println(st.peek());
                 st.pop();
                 j++;
