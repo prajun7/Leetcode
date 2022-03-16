@@ -22,8 +22,8 @@ class Solution {
             }
         }
         
-       // return j == popped.length;
-        return st.isEmpty();
+        // return j == popped.length;   This also works
+         return st.isEmpty(); 
     
 
     }
