@@ -1,4 +1,8 @@
 class Solution {
+    
+    // Check Iterative solution
+    // Iterative solution using while loop is better
+    
     public int search(int[] nums, int target) {
         
         int low = 0;
