@@ -20,10 +20,13 @@ class Solution {
                 right--;
             }
             else{
+                // This means that sum is greater than limit,
+                // so, we will take the heavy person from the right
                 boatCount++;
                 right--;
             }
         }
+        
         return boatCount;
     }
 }
