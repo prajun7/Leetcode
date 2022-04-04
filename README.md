@@ -15,4 +15,4 @@ I am starting this year with a promise of being consistent throughout the year. 
 
 **Update**
 Starting from Feb 15 2022, I am using LeetHub to push my code from [Leetcode](https://leetcode.com/prajun_t/).<br>
-Created using [LeetHub](https://github.com/QasimWani/LeetHub).
+Created using [LeetHub](https://github.com/QasimWani/LeetHub)
