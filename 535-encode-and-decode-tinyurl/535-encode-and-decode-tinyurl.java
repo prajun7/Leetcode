@@ -1,5 +1,7 @@
 public class Codec {
     
+    // https://leetcode.com/discuss/interview-question/124658/Design-a-URL-Shortener-(-TinyURL-)-System/
+    
     Map<Integer, String> map = new HashMap<>();
     int i=0;
     
