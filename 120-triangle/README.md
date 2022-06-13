@@ -5,7 +5,7 @@
 <p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
+<pre><strong>Input:</strong> triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]
 <strong>Output:</strong> 11
 <strong>Explanation:</strong> The triangle looks like:
    <u>2</u>
@@ -13,13 +13,13 @@
  6 <u>5</u> 7
 4 <u>1</u> 8 3
 The minimum path sum from top to bottom is 2 + 3 + 5 + 1 = 11 (underlined above).
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p><strong>Example 2:</strong></p>
 
-<pre style="position: relative;"><strong>Input:</strong> triangle = [[-10]]
+<pre><strong>Input:</strong> triangle = [[-10]]
 <strong>Output:</strong> -10
-<div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+</pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
