@@ -27,6 +27,7 @@ public class WordFilter {
             }
         }
     }
+    
     public int f(String prefix, String suffix) {
         TrieNode cur = root;
         for (char c: (suffix + '{' + prefix).toCharArray()) {
